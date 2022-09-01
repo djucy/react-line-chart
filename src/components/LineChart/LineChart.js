@@ -1,12 +1,12 @@
 import style from '../CommonStyle/CommoneStyle.module.css';
 import React, { useState, useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-// import { LineChart } from '@d3/line-chart';
-import dataChart from '../../data/data.json';
+
+// import dataChart from '../../data/data.json';
 import { curveCardinal } from 'd3';
 
 export default function LineChart() {
-  const [data, setData] = useState([25, 50, 70, 10, 15]);
+  const [data] = useState([25, 50, 70, 10, 15]);
   const svgRef = useRef();
 
   useEffect(() => {

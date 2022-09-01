@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 import dataChart from '../../data/data.json';
 
 export default function LineChart2() {
-  const [chartDate, setChartDate] = useState(dataChart);
+  const [chartDate] = useState(dataChart);
   const ref = useRef();
 
   const margin = { top: 10, right: 30, bottom: 30, left: 60 },
