@@ -79,7 +79,15 @@ export default function LineChart2() {
       .attr('fill', 'none')
       .attr('stroke', 'black')
       .attr('d', generateScaledLine);
-  }, [chartDate, domain, width]);
+  }, [
+    chartDate,
+    domain,
+    width,
+    margin.bottom,
+    margin.left,
+    margin.right,
+    margin.top,
+  ]);
 
   return (
     <div className={style.chart}>
